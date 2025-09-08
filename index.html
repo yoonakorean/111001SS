@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>7-1 句子跟讀挑戰</title>
+<title>10-1 句子跟讀挑戰</title>
 <style>
 body { font-family: sans-serif; max-width: 600px; margin: auto; text-align: center; padding: 30px 15px; }
 #logo { width: 150px; max-width: 80%; margin-bottom: 10px; }
@@ -28,7 +28,7 @@ audio { width: 100%; max-width: 500px; margin: 0 auto; display: block; }
 </head>
 <body>
 <img id="logo" src="logo.png" alt="Logo">
-<div id="game-title">7-1 句子跟讀挑戰</div>
+<div id="game-title">10-1 句子跟讀挑戰</div>
 
 <div id="nickname-container">
   <div style="font-size:20px; font-weight:bold; margin-bottom:10px;">歡迎挑戰者到來</div>
@@ -71,18 +71,18 @@ audio { width: 100%; max-width: 500px; margin: 0 auto; display: block; }
 <script src="recorder.js"></script>
 <script>
 const questions = [
-{ audio: "audio/11070101S.mp3", text: "이 모자는 얼마예요?", keywords: "모자, 얼마" },
-{ audio: "audio/11070102S.mp3", text: "그 치마는 삼만 팔천 원이에요.", keywords: "치마, 가격" },
-{ audio: "audio/11070103S.mp3", text: "비빔밥은 구천칠백 원이에요.", keywords: "비빔밥, 가격" },
-{ audio: "audio/11070104S.mp3", text: "신발은 십만 팔천 원이에요.", keywords: "신발, 가격" },
-{ audio: "audio/11070105S.mp3", text: "원피스는 육만 삼천 원이에요.", keywords: "원피스, 가격" },
-{ audio: "audio/11070106S.mp3", text: "옷은 사만 오천 원이에요.", keywords: "옷, 가격" },
-{ audio: "audio/11070107S.mp3", text: "커피는 이천백 원이에요.", keywords: "커피, 가격" },
-{ audio: "audio/11070108S.mp3", text: "물은 천삼백 원이에요.", keywords: "물, 가격" },
-{ audio: "audio/11070109S.mp3", text: "바지는 만 오천 원이에요.", keywords: "바지, 가격" },
-{ audio: "audio/11070110S.mp3", text: "코트는 십칠만 육천 원이에요.", keywords: "코트, 가격" },
-{ audio: "audio/11070111S.mp3", text: "양말은 천이백 원이에요.", keywords: "양말, 가격" },
-{ audio: "audio/11070112S.mp3", text: "반지는 칠천백 원이에요.", keywords: "반지, 가격" }
+{ audio: "audio/11100101S.mp3", text: "옷이 많습니다.", keywords: "옷, 많다" },
+{ audio: "audio/11100102S.mp3", text: "할머니가 쉽니다.", keywords: "할머니, 쉬다" },
+{ audio: "audio/11100103S.mp3", text: "떡볶이가 맵습니다.", keywords: "떡볶이, 맵다" },
+{ audio: "audio/11100104S.mp3", text: "강아지가 귀엽습니다.", keywords: "강아지, 귀엽다" },
+{ audio: "audio/11100105S.mp3", text: "한국 아이돌이 유명합니다.", keywords: "아이돌, 유명하다" },
+{ audio: "audio/11100106S.mp3", text: "원피스가 예쁩니다.", keywords: "원피스, 예쁘다" },
+{ audio: "audio/11100107S.mp3", text: "신발이 큽니다.", keywords: "신발, 크다" },
+{ audio: "audio/11100108S.mp3", text: "형이 많이 먹습니다.", keywords: "형, 먹다" },
+{ audio: "audio/11100109S.mp3", text: "지하철이 더 빠릅니까?", keywords: "지하철, 빠르다" },
+{ audio: "audio/11100110S.mp3", text: "날씨가 좋습니다.", keywords: "날씨, 좋다" },
+{ audio: "audio/11100111S.mp3", text: "시간이 많이 없습니다.", keywords: "시간, 없다" },
+{ audio: "audio/11100112S.mp3", text: "사이즈가 작습니다.", keywords: "사이즈, 작다" }
 ];
 
 let currentQuestion = 0;
@@ -91,7 +91,7 @@ let recorder, audioContext, stream;
 let startTime = Date.now();
 let completedQuestions = [];
 
-const unit = "11-7-1 句子跟讀挑戰";
+const unit = "11-10-1 句子跟讀挑戰";
 
 const questionText = document.getElementById("question-text");
 const keywordsDiv = document.getElementById("keywords");
